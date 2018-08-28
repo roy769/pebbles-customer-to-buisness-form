@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import {emojify} from 'react-emojione';
 import './App.css';
 
 class App extends Component {
@@ -24,37 +25,32 @@ class App extends Component {
           </nav>
         </div>
 
-        <div class="dropdown-divider"></div>
         <form>
-          <h4 className ="title">
-            First a little about you
-          </h4>
-          <div className="name" />
-          <label>
-                  Full Name:
-            <input type="text" name="full-name" />
-          </label>
-            <input type="submit" value="submit" />
+          <div className="form-group">
+            <label for="pointOfContact">Who am I
+             {emojify(':speaking_head:')}
+             speaking too
+           </label>
+           <input type="text" className="form-control" id="inputFullName" placeholder=" Full Name"/>
 
-          <div className="contact" />
-          <label >
-                  Direct Contact Number:
-            <input type="text" name="direct-name" />
-          </label>
+          </div>
+          <div className="form-group">
+            <label for="exampleInputEmail1">Whats the best email to get back to you at?</label>
+            <input type="email" className="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
+            <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
 
-            <input type="submit" value="submit" />
-          <label >
-                  Pool's Address:
-            <input type="text" name="direct-name" />
-          </label>
+          </div>
+          <div className="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
+          </div>
+          <div className="form-check">
+            <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+            <label className="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" className="btn btn-primary">Submit</button>
 
-            <input type="submit" value="submit" />
-          <label >
-                  Referrals Name:
-            <input type="text" name="direct-name" />
-          </label>
-
-            <input type="submit" value="submit" />        </form>
+        </form>
 
 <div className="dropdown-divider"></div>
 
