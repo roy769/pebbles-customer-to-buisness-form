@@ -1,3 +1,39 @@
 Flash intro of family having by a pool summer time good vibes cut tp pebbles logo
 use blend in and flash animation
 set animation to sin theta and set effects to 1 and 0
+
+--------------------------------------------------------------------------------------------------------------------------
+
+front end ask for zip code
+backend prioritize jobs by zip code
+    i.e. priority one is along freeways
+    least is rural/secluded
+        boundaries san bernadino, riverside, upland,(no check points) yucca valley, up 74, joshua tree
+
+    email response stating that info was accepted you'll be hearing back from a representative with in 24 hours
+
+    back end to Vazquez plastering email to representative and Eric Valdivia
+
+request 2 - 5 images of plastering site
+  at least one pool and one speaking
+  make sure pictures are good quality with zip code
+
+  request any images showing damages
+
+--------------------------------------------------------------------------------------------------------------------------
+
+give ideas by way of pebbles sample
+
+backend hover function show a pool with the samples in it
+
+
+FAQ:
+How long will the job take?
+
+What about the water line tile ?
+
+
+---------------------------------------------------------------------------------------------------------------
+email disclaimer return:
+any undisclosed info in regards to pool damages or misleading information will result in alteration of original quote given
+factors that affect given quotes: mileage and supply availability in regards to site 
