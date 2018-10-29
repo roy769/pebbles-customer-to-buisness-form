@@ -8,17 +8,23 @@ class App extends Component {
   state = {
     selectedFile: null
   }
-  // fileSelectedHandler = event => {
-  // this.setState{(
-  //
-  //   selectedFile:event.target.files[0]
-  //   })
-  // }
-  // fileUploadHandler = () => {
-  //   const fd = new FormData();
-  //
-  //   axios.post
-  // }
+  fileSelectedHandler = event => {
+  this.setState({
+
+
+    selectedFile: event.target.files[0]
+  })
+
+  }
+  fileUploadHandler = () => {
+    const fd = new FormData();
+    fd.append('image', this.state.selectedFile, this.state.selectedFile.name);
+    axios.post('gs://aqua-finishes-data.appspot.com
+');
+    .then(res => {
+      console.log(res);
+    });
+  }
   render() {
     return (
       <div className="App">
@@ -58,7 +64,7 @@ class App extends Component {
             </label>
             <input type="integer" className="form-control" id="inputZipcode" placeholder="Enter Zipcode"/>
 
-            <label for="imageUpload" alt="imageUploads">Please upload images of what needs to be finished</label>
+            <label for="imageUpload" alt="imageUploads">Please upload images of the job at hand </label>
             <input type="file" onChange={this.fileSelectedHandler}/>
             <button onClick={this.fileUploadHandler}> Upload </button>
           </div>
