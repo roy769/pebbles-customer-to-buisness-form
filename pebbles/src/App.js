@@ -17,30 +17,28 @@ class App extends Component {
 
   }
   fileUploadHandler = () => {
-    const fd = new FormData();
-    fd.append('image', this.state.selectedFile, this.state.selectedFile.name);
-    axios.post('gs://aqua-finishes-data.appspot.com
-');
-    .then(res => {
-      console.log(res);
-    });
+//     const fd = new FormData();
+//     fd.append('image', this.state.selectedFile, this.state.selectedFile.name);
+//     axios.post('gs://aqua-finishes-data.appspot.com
+// ');
+//     .then(res => {
+//       console.log(res);
+//     });
   }
   render() {
     return (
       <div className="App">
         <div className="container-fluid">
 
-          <nav className="nav nav-extended nav-wrapper">
+          <nav className="nav nav-extended nav-wrapper justify-content-center">
             <div className="logo">
-              <div className="row">
-                <div className="col center">
 
 
-                  <h3 className="for-now right">
-                    Vazquez Pool Plastering or Aqua Finishes
+
+                  <h3 className="for-now">
+                    Aqua Finishes Customer Contact Form
                   </h3>
-                </div>
-              </div>
+
             </div>
 
           </nav>
@@ -49,7 +47,7 @@ class App extends Component {
           <div className="form-group">
             <label for="pointOfContact">Who am I
              {emojify(':speaking_head:')}
-             speaking too
+             speaking to ?
            </label>
            <input type="text" className="form-control" id="inputFullName" placeholder=" Full Name"/>
 
@@ -78,12 +76,12 @@ class App extends Component {
 
         </form>
 
-</div>
+    </div>
 
 
 
 
-</div>
+  </div>
     );
   }
 }

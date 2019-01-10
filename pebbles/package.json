@@ -4,17 +4,28 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
     "firebase-tools": "^4.2.1",
+    "handlebars": "^4.0.12",
+    "path": "^0.12.7",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-emojione": "^5.0.0",
     "react-scripts": "1.1.4",
-    "redux-form": "^7.4.2"
+    "redux-form": "^7.4.2",
+    "request": "^2.88.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
