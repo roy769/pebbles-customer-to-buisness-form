@@ -20,5 +20,9 @@ var destination = fs.createWriteStream('./downloads/zipatlas.htm');
 var url= 'http://zipatlas.com/us/ca/zip-code-comparison/median-household-income.htm';
 request(url).pipe(destination);
 
+destination.on('finish', function(){
+  console.log("donzo");
+});
+
 app.listen(port);
 console.log('server is listening:' + port);
